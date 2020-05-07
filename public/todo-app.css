@@ -1,0 +1,133 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.TodoPage-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #453C52;
+  letter-spacing: 0.14px;
+  margin-bottom: 12px;
+}
+
+.AddTodo {
+  display: inline-flex;
+  margin-bottom: 21px;
+}
+
+.AddTodo-text {
+  background: #FFFFFF;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  border-radius: 4px;
+}
+
+.AddTodo-text::placeholder {
+  font-size: 14px;
+  color: #726A7E;
+  letter-spacing: 0.1px;
+  padding: 6px 95px 7px 12px;
+}
+
+.AddTodo-date {
+  margin-left: 10px;
+  background: #FFFFFF;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  border-radius: 4px;
+}
+
+.AddTodo-button {
+  margin-left: 11px;
+  background: #48BB78;
+  border-radius: 4px;
+  padding: 7px 22px 7px 22px;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.1px;
+  border: #48BB78;
+  opacity: 0.9;
+}
+
+.TodoSectionTitle {
+  display: flex;
+  margin-top: 3px;
+  margin-bottom: 13px;
+  align-items: center;
+}
+
+.TodoSectionTitle-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #453C52;
+  letter-spacing: 0.1px;
+}
+
+.TodoSectionTitle-remainingCount {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #453C52;
+  letter-spacing: 0.09px;
+}
+
+.TodoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  margin-left: 20px;
+}
+
+.TodoItem-checkBox {
+  background: #FFFFFF;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  border-radius: 4px;
+}
+
+.TodoItem-todoText {
+  padding-left: 8px;
+  padding-top: 8px;
+  font-size: 14px;
+  color: #453C52;
+  letter-spacing: 0.1px;
+}
+
+.TodoItem-overdueLabel {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #C53030;
+  letter-spacing: 0.09px;
+}
+
+.TodoItem-delete {
+  max-height: 15px;
+  max-width: 15px;
+  margin-left: 21.2px;
+  visibility: hidden;
+}
+
+.TodoItem:hover {
+  background: #F1EDF7;
+  border-radius: 5px;
+}
+
+.TodoItem:hover .TodoItem-delete {
+  visibility: visible;
+}
+
+.TodoItem-date {
+  padding-top: 6px;
+  padding-left: 10px;
+  font-size: 12px;
+  color: #726A7E;
+  letter-spacing: 0.09px;
+}
+
+.TodoItem-dueDate {
+  font-size: 10px;
+  margin-left: 10px;
+  color: rgb(103,89,123);
+}

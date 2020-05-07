@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo Management App</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="todo-app.css">
+</head>
+
+<body>
+  <main class="TodoPageMain">
+    <h1 class="TodoPage-title">My To-do List</h1>
+    <section class="AddTodo">
+      <input type="text" id="todo_text" name="todo_text" placeholder="What's next?" class="AddTodo-text">
+      <input type="date" id="due_date" name="due_date" value=" " class="AddTodo-date">
+      <input type="button" value="Add" onclick="javascript::void(0)" class="AddTodo-button">
+    </section>
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle-title">Due Today</p>
+        <p class="TodoSectionTitle-remainingCount">0/4</p>
+      </div>
+      <ul>
+        <li class="TodoItem">
+          <input type="checkbox" class="TodoItem-checkBox">
+          <p class="TodoItem-todoText">Type something</p>
+          <p class="TodoItem-overdueLabel">Overdue</p>
+          <img src="trash-can-outline.png" class="TodoItem-delete">
+        </li>
+        <li class="TodoItem">
+          <input type="checkbox" class="TodoItem-checkBox">
+          <p class="TodoItem-todoText">Type something</p>
+          <img src="trash-can-outline.png" class="TodoItem-delete">
+        </li>
+      </ul>
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle-title">Due Tomorrow</p>
+        <p class="TodoSectionTitle-remainingCount">0/3</p>
+      </div>
+      <ul>
+        <li class="TodoItem">
+          <input type="checkbox" class="TodoItem-checkBox">
+          <p class="TodoItem-todoText">Type something</p>
+          <img src="trash-can-outline.png" class="TodoItem-delete">
+        </li>
+      </ul>
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle-title">Remaining</p>
+        <p class="TodoSectionTitle-remainingCount">0/3</p>
+      </div>
+      <ul>
+        <li class="TodoItem">
+          <input type="checkbox" class="TodoItem-checkBox">
+          <p class="TodoItem-todoText">Type something</p>
+          <p class="TodoItem-date">Jan 21</p>
+          <img src="trash-can-outline.png" class="TodoItem-delete">
+        </li>
+        <li class="TodoItem">
+          <input type="checkbox" class="TodoItem-checkBox">
+          <p class="TodoItem-todoText">Type something</p>
+          <p class="TodoItem-date">Jan 21</p>
+          <img src="trash-can-outline.png" class="TodoItem-delete">
+        </li>
+        <li class="TodoItem">
+          <input type="checkbox" class="TodoItem-checkBox">
+          <p class="TodoItem-todoText">Type something</p>
+          <p class="TodoItem-date">Jan 21</p>
+          <img src="trash-can-outline.png" class="TodoItem-delete">
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
