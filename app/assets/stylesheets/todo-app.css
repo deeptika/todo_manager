@@ -95,6 +95,15 @@ body {
   letter-spacing: 0.1px;
 }
 
+.TodoItem-completedTodoText {
+  padding-left: 8px;
+  padding-top: 8px;
+  font-size: 14px;
+  color: #453C52;
+  letter-spacing: 0.1px;
+  text-decoration: line-through;
+}
+
 .TodoItem-overdueLabel {
   font-size: 12px;
   margin-left: 10px;
