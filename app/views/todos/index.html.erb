@@ -1,10 +1,10 @@
 <main class="TodoPageMain">
   <h1 class="TodoPage-title">My To-do List</h1>
-    <section class="AddTodo">
+    <form class="AddTodo" action="/todos" method="POST">
       <input type="text" id="todo_text" name="todo_text" placeholder="What's next?" class="AddTodo-text">
       <input type="date" id="due_date" name="due_date" value=" " class="AddTodo-date">
-      <input type="button" value="Add" onclick="javascript::void(0)" class="AddTodo-button">
-    </section>
+      <input type="submit" value="Add" class="AddTodo-button">
+    </form>
 
     <%= render partial: "todo-section", locals: {
                  section_title: "Overdue",
