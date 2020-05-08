@@ -7,14 +7,14 @@
     <% todos.all.each do |todo| %>
       <li class="TodoItem">
         <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
-          <input type="checkbox" class="TodoItem-checkBox" name="completed" <%= todo.completed ? "checked" : "" %> onclick="this.form.submit()"/>
+          <%= check_box_tag "completed", nil, todo.completed, class: "TodoItem-checkBox", :onclick => "submit()" %>
         <% end %>
         <p class=<%= todo.completed ? "TodoItem-completedTodoText" : "TodoItem-todoText" %>> <%= todo.todo_text %> </p>
         <% if show_due_date %>
           <p class="TodoItem-dueDate"> <%= todo.due_date.to_s(:short) %>
         <% end %>
         <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
-          <input type="image" src="trash-can-outline.png" class="TodoItem-delete">
+          <%= image_submit_tag("trash-can-outline.png", class: "TodoItem-delete") %>
         <% end %>
       </li>
     <% end %>
