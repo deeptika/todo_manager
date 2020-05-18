@@ -7,14 +7,16 @@ class UsersController < ApplicationController
     render plain: User.order(:id).map { |user| user.to_pleasant_string }.join("\n")
   end
 
+  def new
+    render "users/new"
+  end
+
   def create
     first_name = params[:first_name]
     last_name = params[:last_name]
     email = params[:email]
-    password = params[:password]
-    new_user = User.create!(first_name: first_name, last_name: last_name, email: email, password: password)
-    response_text = "New user created with user ID #{new_user.id}"
-    render plain: response_text
+    new_user = User.create!(first_name: first_name, last_name: last_name, email: email)
+    redirect_to "/"
   end
 
   def login
