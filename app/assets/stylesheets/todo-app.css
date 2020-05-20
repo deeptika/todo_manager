@@ -84,6 +84,7 @@ body {
   border: 1px solid #BFB8CC;
   border-radius: 4px;
   border-radius: 4px;
+  margin-top: 10px;
 }
 
 .TodoItem-todoText {
@@ -132,6 +133,7 @@ body {
   font-size: 12px;
   color: #726A7E;
   letter-spacing: 0.09px;
+  margin-top: 10px;
 }
 
 .TodoItem-dueDate {
