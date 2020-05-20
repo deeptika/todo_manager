@@ -13,10 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
- .UserHeader {
-   padding: 10px;
-   margin-bottom: 10px;
-   font-size: 14px;
-   background-color: lightgray;
- }

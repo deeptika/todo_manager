@@ -14,3 +14,12 @@
   letter-spacing: 0.1px;
   text-align: center;
 }
+
+.UserHeader {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
