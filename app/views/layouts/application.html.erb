@@ -10,6 +10,7 @@
   </head>
 
   <body>
+
     <% if @current_user %>
       <p class="UserHeader">
         Welcome <%= @current_user.first_name %>!
@@ -17,6 +18,11 @@
       </p>
     <% end %>
 
+    <% if flash[:error] %>
+      <p class="Flash-error"> <%= flash[:error] %> </p>
+    <% end %>
+
     <%= yield %>
+
   </body>
 </html>
