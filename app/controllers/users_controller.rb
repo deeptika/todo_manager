@@ -3,10 +3,6 @@
 class UsersController < ApplicationController
   skip_before_action :ensure_user_logged_in
 
-  def index
-    render plain: User.order(:id).map { |user| user.to_pleasant_string }.join("\n")
-  end
-
   def new
     render "users/new"
   end
@@ -24,16 +20,5 @@ class UsersController < ApplicationController
       flash[:error] = new_user.errors.full_messages.join(", ")
       redirect_to new_user_path
     end
-  end
-
-  def login
-    email = params[:email]
-    password = params[:password]
-    user_found = User.find_by(email: email, password: password)
-    response_text = "true"
-    if user_found == nil
-      response_text = "false"
-    end
-    render plain: response_text
   end
 end
